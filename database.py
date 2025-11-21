@@ -19,8 +19,7 @@ from sqlalchemy.orm import sessionmaker, declarative_base
 
 # Railway MySQL connection (public network)
 SQLALCHEMY_DATABASE_URL = (
-    "mysql+mysqlconnector://root:vZWQSjHsYvbQvRlQuWohtghZoFfwgjRG"
-    "@mainline.proxy.rlwy.net:16889/railway"
+    "mysql://root:BrNntmyGdyBODDsgNkJWoaOjoWEhOpkZ@tramway.proxy.rlwy.net:47575/railway"
 )
 
 engine = create_engine(
@@ -38,3 +37,4 @@ def get_db():
         yield db
     finally:
         db.close()
+
